@@ -6,14 +6,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('StaticPage.home') }}">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link {{(url()->current() == route('StaticPage.home') ? 'active' : "")}}" href="{{ route('StaticPage.home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('StaticPage.chisiamo') }}">Chi siamo</a>
+                    <a class="nav-link {{(url()->current() == route('StaticPage.chisiamo') ? 'active' : "")}}" href="{{ route('StaticPage.chisiamo') }}">Chi siamo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('Student.studenti') }}">Studenti</a>
+                    <a class="nav-link {{(url()->current() == route('Student.studenti') ? 'active' : "")}}" href="{{ route('Student.studenti') }}">Studenti</a>
                 </li>
 
             </ul>
