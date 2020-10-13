@@ -14,5 +14,5 @@ class StaticPageController extends Controller
         return view('chisiamo');
     }
 
-
+    
 }

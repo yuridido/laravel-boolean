@@ -1,5 +1,12 @@
+.scheda {
+    text-align: center;
+}
+
+.portafoto {
+    object-fit: contain;
+    overflow: hidden;
+}
+
 .foto-studenti {
-    width: 80%;
-    border-radius: 50%;
-    margin: auto;
+    height: 100%;
 }

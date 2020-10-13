@@ -2,11 +2,11 @@
 @section('title', 'Chi siamo')
 @section('content')
 <div>
-    <div class="card-group">
+    <div class="card-deck">
         @foreach ($data as $student)
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card mb-3 scheda" style="max-width: 540px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
+                <div class="col-md-4 porta-foto">
                     <img src="{{ $student['img'] }}" class="card-img foto-studenti" alt="{{ $student['nome'] }}">
                 </div>
                 <div class="col-md-8">
