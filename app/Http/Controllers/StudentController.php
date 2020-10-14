@@ -23,10 +23,10 @@ class StudentController extends Controller
     }
 
     public function show($id) {
-        if (!array_key_exists($id, $this->students)) {
+        $student = Student::find($id);
+        if (empty($student)) {
             abort(404);
         }
-        $student = $this->students[$id];
         return view('show', compact('student'));
     }
 

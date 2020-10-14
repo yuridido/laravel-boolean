@@ -10899,17 +10899,7 @@ a.text-dark:focus {
   }
 }
 
-.scheda {
-  text-align: center;
-}
-
-.portafoto {
-  -o-object-fit: contain;
-     object-fit: contain;
-  overflow: hidden;
-}
-
-.foto-studenti {
-  height: 100%;
+.limite {
+  max-width: 400px;
 }
 
