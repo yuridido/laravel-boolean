@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Student;
 
 class StudentController extends Controller
 {
@@ -12,9 +13,13 @@ class StudentController extends Controller
         $this->students = config('students');
     }
 
+    // public function studenti() {
+    //     $data = $this->students;
+    //     return view('studenti', compact('data'));
+    // }
     public function studenti() {
-        $data = $this->students;
-        return view('studenti', compact('data'));
+        $students = Student::all();
+        return view('studenti2', compact('students'));
     }
 
     public function show($id) {

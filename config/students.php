@@ -9,7 +9,7 @@ return [
         'genere' => 'f',
         'slug' => 'dany',
         'azienda' => 'RDS Radio Dimensione Suono',
-        'ruolo' => '',
+        'ruolo' => 'web developer',
         'descrizione' => 'Laureata in psicologia alla Sapienza di Roma con una nascente carriere nella SEO, Daniela si iscrive al corso Boolean. Ora lavora come web developer presso RDS Radio Dimensione Suono.'
     ],
     [
